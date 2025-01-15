@@ -1,7 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset=
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta content="Kimberlee Haldane" property="og:site_name">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://media.journoportfolio.com">
+    <meta name="robots" value="noindex">
+    <base href="/">
+    <meta content="Kimberlee Haldane" name="author">
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Kimberlee Haldane">
+    <meta prefix="og: http://ogp.me/ns#" property="og:description"
+        content="Technical Writer Kimberlee Haldane. Covering digital, web, copy, and marketing writing.">
+    <link rel="canonical" href="https://www.bykimberleehaldane.com/">
+    <meta content="https://www.bykimberleehaldane.com/" name="twitter:url" property="og:url">
+    <meta content="Technical Writer Kimberlee Haldane. Covering digital, web, copy, and marketing writing." name="description">
+    <style id="temp-styles">
+        #app,
+        .jp-column-mount,
+        .jp-block-mount,
+        .jp-section-mount {
+            display: none;
+        }
+    </style>
     <link rel="stylesheet" href="/styles.css">
+    <script type="text/javascript" src="/script.js"></script>
 </head>  
+
+<body data-global-block-id="617482" id="" data-transparent-header="false" data-button-style-hover="slide-up" data-animation-style="fade-in">
+    <svg id="icon-defs" version="2.0" style="display: none">
+        <defs>
+            <symbol id="cart-icon" viewBox="0,-960,960,960">
+                <g transform="translate(0,250)">
+                    <path
+                        d="M286.788-81Q257-81 236-102.212q-21-21.213-21-51Q215-183 236.212-204q21.213-21 51-21Q317-225 338-203.788q21 21.213 21 51Q359-123 337.788-102q-21.213 21-51 21Zm400 0Q657-81 636-102.212q-21-21.213-21-51Q615-183 636.212-204q21.213-21 51-21Q717-225 738-203.788q21 21.213 21 51Q759-123 737.788-102q-21.213 21-51 21ZM235-741l110 228h288l125-228H235Zm-30-60h589.074q22.964 0 34.945 21Q841-759 829-738L694-495q-11 19-28.559 30.5Q647.881-453 627-453H324l-56 104h491v60H277q-42 0-60.5-28t.5-63l64-118-152-322H51v-60h117l37 79Zm140 288h288-288Z" />
+                </g>
+            </symbol>
+            <symbol id="email" viewBox="0,0,2134,2134">
+                <g transform="translate(0,418)">
+                    <path
+                        d="M1145,-367 C1327,-367,1526,-286,1743,-123 C1983,105,2103,365,2103,658 C2103,999,1952,1284,1651,1513 C1471,1631,1278,1690,1072,1690 C698,1690,401,1519,180,1177 C87,1012,40,839,40,658 C40,326,184,47,473,-178 C631,-287,798,-350,974,-367 C974,-367,1145,-367,1145,-367Z M504,1025 C509,1066,530,1086,565,1086 C565,1086,1578,1086,1578,1086 C1619,1080,1639,1060,1639,1025 C1639,1025,1639,372,1639,372 C1639,347,1627,327,1603,310 C1603,310,540,310,540,310 C516,325,504,343,504,365 C504,365,504,1025,504,1025Z M559,1031 C559,1031,559,1019,559,1019 C559,1019,864,658,864,658 C832,621,734,525,571,372 C571,372,577,372,577,372 C616,398,738,498,943,671 C986,708,1029,743,1072,774 C1245,633,1402,503,1541,384 C1541,384,1548,396,1548,396 C1471,463,1382,550,1279,658 C1279,658,1578,1012,1578,1012 C1578,1012,1578,1025,1578,1025 C1578,1025,1236,689,1236,689 C1236,689,1230,689,1230,689 C1230,700,1177,755,1072,854 C1072,854,901,695,901,695 C789,812,675,924,559,1031Z" />
+                </g>
+            </symbol>
+            <symbol id="linkedin" viewBox="0,0,2134,2134">
+                <g transform="translate(0,418)">
+                    <path
+                        d="M1101,-365 C1316,-365,1531,-282,1746,-116 C1905,44,2003,188,2038,316 C2086,423,2098,591,2098,632 C2098,632,2098,729,2098,729 C2082,876,2050,1000,2001,1100 C1894,1317,1730,1481,1509,1592 C1351,1657,1209,1690,1083,1690 C1083,1690,1071,1690,1071,1690 C816,1690,583,1597,372,1410 C239,1272,156,1150,123,1045 C86,963,62,860,50,735 C50,735,50,607,50,607 C50,398,137,185,311,-31 C539,-254,786,-365,1053,-365 C1053,-365,1101,-365,1101,-365Z M664,328 C675,389,714,419,779,419 C832,419,869,389,889,328 C889,328,889,322,889,322 C889,259,850,223,773,212 C726,212,689,238,664,291 C664,291,664,328,664,328Z M676,1076 C677,1084,681,1088,688,1088 C688,1088,858,1088,858,1088 C866,1088,870,1084,870,1076 C870,1076,870,522,870,522 C870,522,858,498,858,498 C858,498,688,498,688,498 C680,499,676,503,676,510 C676,510,676,1076,676,1076Z M980,1076 C981,1084,985,1088,992,1088 C992,1088,1162,1088,1162,1088 C1170,1088,1174,1084,1174,1076 C1174,1076,1174,766,1174,766 C1184,681,1219,638,1278,638 C1347,638,1381,681,1381,766 C1381,766,1381,1076,1381,1076 C1382,1084,1386,1088,1393,1088 C1393,1088,1576,1088,1576,1088 C1576,1088,1576,705,1576,705 C1576,636,1543,573,1478,516 C1429,496,1398,486,1387,486 C1387,486,1326,486,1326,486 C1279,488,1232,512,1187,559 C1187,559,1174,559,1174,559 C1174,559,1174,498,1174,498 C1174,498,980,498,980,498 C980,498,980,1076,980,1076Z" />
+                </g>
+            </symbol>
+        </defs>
+    </svg>
+    <div class="block block--block-element block-navigation-sidebar" data-definition-name="Navigation Sidebar"
+        data-definition-type="navigation" data-id="617486" data-order="0" id="block-617486">
+
+        <style>
+            :root {
+                --header-height: 0px;
+            }
+        
+            * {
+                --sidebar-width: 300px;
+            }
+        
+            #jp-section-placeholder,
+            #jp-footer-placeholder {
+                padding-left: 10vw;
+                padding-right: 10vw;
+            }
+        
+            .page {
+                padding-left: var(--sidebar-width);
+            }
+        
+            .block-navigation-sidebar {
+                width: var(--sidebar-width);
+            }
+        
+        
+            .block-navigation-sidebar:after {
+                background: var(--jp-palette-block-background, #eee);
+                height: 300vh;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                width: var(--sidebar-width);
+                content: '';
+            }
+        
+            @media only screen and (max-width: 600px) {
+                .page {
+                    padding-left: unset;
+                }
+        
+                .block-navigation-sidebar:after {
+                    display: none;
+                }
+            }
+        </style>
+        <div class="sidebar alignment--center width--medium header--">
+        
+        
+        
+            <div class="sidebar__content">
+            <div class="initial size-medium shape-round">
+              <!----  <img class="initial" alt='the letter K'
+                    src="https://previews.dropbox.com/p/thumb/ACgGj7WIwQj9_QutoC0rnufkzsc7D4laRWQFTPv5LkEEMZNiSbUPCxBJ8sjWZMb_Qd2WBQ_l_Np_OpD-BmH95LhWZGP3xfzUY2JS8HBR8ef2GqvnKZxZgLDEYDIbxdULU-mFJlfOXQd-dkIwJsiUmH6FFgZ2nl_FDno5dtmE9Pk4KkeuQ2ThEq4fl6YdjIkid5XLKCjcGRkJliHjsz5Nar1LmGZqTA4vn4RJy95C4ne23M84VdafZw3exFT0cBUOjJ-AdaokLIrA5VvnC6ZdYGt4ZTgK-M--i3yMgK2Hw4ohQABQ--yLCX7Qu_t6l2I8BG0DmooxI2F9XWbIxm2dn14e/p.png"> -->
+            </div>
+            <div class="social-icons style-colour">
+                <a target="_blank" href="mailto:khaldane244@gmail.com" aria-label="Email">
+                    <i class="social-icon"><svg version="2.0" style="fill: #333 !important;">
+                            <use href="#email" />
+                        </svg></i>
+                </a>
+                
+                <a target="_blank" href="https://www.linkedin.com/in/kimberlee-haldane-09a292332" aria-label="Linkedin">
+                    <i class="social-icon"><svg version="2.0" style="fill: #0177b5 !important;">
+                            <use href="#linkedin" />
+                        </svg></i>
+                </a>
+            </div>
+
+            <h1 class="logo">
+                <a href="/" data-portfolio-title>Kimberlee Haldane</a>
+            </h1>
+            <div class="bio" data-bio>
+                <p>I am a copywriter specializing in content, advertising, UX,&nbsp;and technical writing.</p>
+            </div>
+            
+            
+            
+            <nav class="menu">
+                <ul>
+            
+                    <li><a target="_self" class="" href="/">Home</a>
+            
+            
+                    </li>
+            
+                    <li><a target="_self" class="" href="/about/">About</a>
+            
+            
+                    </li>
+            
+                </ul>
+            </nav>
+            
+            
+            </div>
+            </div>
+            </div>
+            
+            
+            
+            
+            </div>
+            <div class="page " id="page-74023">
+                <div class="content" id="content">
+            
+            
+            
+                    <section class="section"
+                        data-background-src="https://media.journoportfolio.com/users/183483/images/98382e8f-da29-465a-a384-798d923b864e.jpeg"
+                        style="background-position: 50% 50%;" data-order="1" data-id="197954" id="section-197954">
+            
+            
+            
+            
+            
+            
+            
+                        <div class="section__content">
+            
+                            <div class="column" data-column="1">
+            
+                                <div class="block block--inline block-heading" data-definition-name="Heading"
+                                    data-definition-type="generic" data-id="617489" data-order="1" id="block-617489">
+                                    <h2 data-alignment="center" class="heading animate-in">The Right Copy for the Right Moment</h2>
+            
+            
+            
+                                </div>
+                                <div class="block block--inline block-text" data-definition-name="Text" data-definition-type="generic" data-id="617490"
+                                    data-order="2" id="block-617490">
+                                    <section class="block-text" data-alignment="center">
+                                        <div class="wrapper--small animate-in" data-richtext="content">
+                                            <p>Writing compelling user experiences to inspire your audience. Let's get to it!</p>
+                                        </div>
+                                    </section>
+                                
+                                
+                                
+                                </div>
+                                
+                                </div>
+                                
+                                
+                                
+                                
+                                </div>
+                                </section>
+                                <section class="section" data-background-src="" style="background-position: ;" data-order="2" data-id="197955"
+                                    id="section-197955">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                    <div class="section__content">
+                                
+                                        <div class="column" data-column="1">
+                                
+                                            <div class="block block--inline block-heading" data-definition-name="Heading" data-definition-type="generic"
+                                                data-id="1608446" data-order="1" id="block-1608446">
+                                                <h2 data-alignment="center" class="heading animate-in">Featured Work</h2>
+                                
+                                
+                                
+                                            </div>
+
+
+
+</body>
 </html>
