@@ -1,4 +1,7 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+/* eslint-disable @next/next/no-img-element */
+import { Card, CardContent, CardHeader } from '@/components/ui/card'
+
+
 
 const AboutMe = () => {
   return (

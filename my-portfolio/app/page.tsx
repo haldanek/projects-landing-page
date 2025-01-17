@@ -9,6 +9,7 @@ import CareerSummary from '@/components/CareerSummary'
 import Footer from '@/components/Footer'
 import AboutMe1 from '@/components/AboutMe1'
 
+
 export default function Home() {
   return (
     <div className='min-h-screen bg-comic-yellow font-sans'>
