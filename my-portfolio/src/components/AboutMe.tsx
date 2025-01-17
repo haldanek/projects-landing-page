@@ -9,7 +9,7 @@ const AboutMe = () => {
         </CardHeader>
         <CardContent className="text-lg">
           <p>
-            Hello! I'm Jane Doe, a passionate technical writer with over 5 years of experience in simplifying complex
+            Hello! I am Jane Doe, a passionate technical writer with over 5 years of experience in simplifying complex
             technical concepts for diverse audiences. My expertise lies in creating clear, concise, and user-friendly
             documentation for software products, APIs, and technical processes.
           </p>

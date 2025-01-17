@@ -7,22 +7,24 @@ import Skills from '@/components/Skills'
 import Philosophy from '@/components/Philosophy'
 import CareerSummary from '@/components/CareerSummary'
 import Footer from '@/components/Footer'
+import AboutMe1 from '@/components/AboutMe1'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-comic-yellow font-sans">
+    <div className='min-h-screen bg-comic-yellow font-sans'>
       <Header />
-      <main className="container mx-auto px-4 py-8 space-y-16 max-w-4xl">
+      <main className='container mx-auto px-4 py-8 space-y-16 max-w-4xl'>
+        <AboutMe1 />
         <AboutMe />
-        <Projects />
-        <Resume />
-        <Contact />
-        <Skills />
         <Philosophy />
         <CareerSummary />
+        <Resume />
+        <Skills />
+        <Projects />
+        <Contact />
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
