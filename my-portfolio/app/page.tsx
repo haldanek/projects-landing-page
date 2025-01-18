@@ -15,6 +15,7 @@ export default function Home() {
     <div className='min-h-screen bg-comic-yellow font-sans'>
       <Header />
       <main className='container mx-auto px-4 py-8 space-y-16 max-w-4xl'>
+      <div className="space-y-4">
         <AboutMe1 />
         <AboutMe />
         <Philosophy />
@@ -23,6 +24,7 @@ export default function Home() {
         <Skills />
         <Projects />
         <Contact />
+      </div>
       </main>
       <Footer />
     </div>

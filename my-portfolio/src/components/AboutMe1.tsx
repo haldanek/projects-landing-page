@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Card, CardContent, CardHeader } from '@/components/ui/card'
+import { Card, CardHeader } from '@/components/ui/card'
 
 
 
@@ -9,11 +9,11 @@ const AboutMe = () => {
       <Card className="comic-card">
         <CardHeader>
         </CardHeader>
-        <CardContent className="text-lg">
+       
          <div>
           <img src="/images/kplogo.png" alt="Logo" />
          </div>
-        </CardContent>
+       
       </Card>
     </section>
   )
