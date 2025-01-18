@@ -11,11 +11,11 @@ const Resume = () => {
         </CardHeader>
         <CardContent>
           <p className="mb-4 text-lg">
-            My resume highlights my professional experience, education, and key achievements in technical writing.
+            My resume highlights my professional experience and education pre and post career transition.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button className="comic-button">Download Resume (PDF)</Button>
-            <Link href="/resume" passHref>
+            <Link href="/my-portfolio/public/images/Haldane_K_Resume_CD_2025 copy.pages.pdf" passHref>
               <Button className="comic-button bg-comic-blue">View Resume</Button>
             </Link>
           </div>

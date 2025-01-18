@@ -6,8 +6,8 @@ import { Comic_Neue } from 'next/font/google'
 const comicNeue = Comic_Neue({ subsets: ['latin'], weight: ['400', '700'] })
 
 export const metadata = {
-  title: 'Jane Doe - Technical Writer',
-  description: 'Portfolio of Jane Doe, an experienced technical writer specializing in API documentation and user guides.',
+  title: 'Kimberlee Haldane - Software Engineer &Technical Writer',
+  description: 'Portfolio of Kimberlee Haldane, an entry-level software engineer & technical writer.',
 }
 
 export default function RootLayout({
