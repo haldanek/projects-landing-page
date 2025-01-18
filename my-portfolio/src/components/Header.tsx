@@ -24,7 +24,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-comic-yellow/95 backdrop-blur supports-[backdrop-filter]:bg-comic-yellow/60 comic-border mb-8">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-3xl font-bold text-comic-red">
-          Jane Doe
+          Kimberlee Haldane
         </Link>
         <div className="hidden md:flex space-x-4">
           {menuItems.map((item) => (
