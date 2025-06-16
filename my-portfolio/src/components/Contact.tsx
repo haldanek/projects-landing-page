@@ -51,8 +51,9 @@ const Contact = () => {
       <Card className='comic-card'>
         <CardHeader>
           <CardTitle className='text-3xl text-comic-blue'>
-            Let's Connect!
+            Let&apos;s Connect!
           </CardTitle>
+
           <CardDescription className='text-comic-black'>
             Send me an email or connect on LinkedIn
           </CardDescription>
