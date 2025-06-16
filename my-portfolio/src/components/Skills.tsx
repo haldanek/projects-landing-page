@@ -1,41 +1,67 @@
-import { Badge } from '@/components/ui/badge'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+
+const skillDescriptions: { [key: string]: string } = {
+  'Technical Research':
+    'Investigating technical concepts to inform documentation and development.',
+  'User Documentation Production':
+    'Creating guides and manuals tailored for end users.',
+  'User Guides':
+    'Step-by-step instructions to help users understand product features.',
+  'Process Documentation':
+    'Recording and explaining workflows for consistent operations.',
+  Markdown: 'Lightweight markup language used for formatting documentation.',
+  'HTML/CSS': 'Languages for structuring and styling web content.',
+  'Git/GitHub':
+    'Version control system and collaboration platform for developers.',
+  'Template Design': 'Creating reusable layouts for documents or applications.',
+  'Audience Adaptation':
+    'Customizing content based on the knowledge level of the reader.',
+  'Agile Methodologies':
+    'Iterative development processes that promote flexibility and collaboration.',
+  'Editing and Proofreading':
+    'Reviewing documents for clarity, grammar, and accuracy.',
+  'Content Development':
+    'Planning and writing content for digital or print media.',
+  'Multimedia Content Creation':
+    'Combining visuals, text, and audio for interactive content.',
+  'Document Formatting':
+    'Organizing text, images, and styles to improve readability.',
+  'Version Control': 'Tracking changes to source code and documents.',
+  'User Interface (UI) Design':
+    'Designing the visual elements users interact with.',
+  'User Experience (UX) Design':
+    'Improving how users experience a product or system.',
+  'Product Features Highlight': 'Showcasing key features that benefit users.',
+};
 
 const Skills = () => {
-  const skills = [
-    'Technical Writing',
-    'API Documentation',
-    'User Guides',
-    'Process Documentation',
-    'Markdown',
-    'HTML/CSS',
-    'Git',
-    'JIRA',
-    'Agile Methodologies',
-    'Information Architecture',
-    'Content Strategy',
-    'Editing & Proofreading',
-  ]
+  const skills = Object.keys(skillDescriptions);
 
   return (
-    <section id="skills" className="scroll-mt-16">
-      <Card className="comic-card">
+    <section id='skills' className='scroll-mt-16'>
+      <Card className='comic-card'>
         <CardHeader>
-          <CardTitle className="text-3xl text-comic-purple">Skills & Abilities</CardTitle>
+          <CardTitle className='text-3xl text-comic-purple'>
+            Skills & Abilities
+          </CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="flex flex-wrap gap-2">
+          <div className='flex flex-wrap gap-4'>
             {skills.map((skill, index) => (
-              <Badge key={index} className="comic-badge">
-                {skill}
-              </Badge>
+              <div key={index} className='relative group'>
+                <div className='comic-button bg-red-600 text-white hover:bg-yellow-400 hover:text-black transition-colors duration-200 rounded px-4 py-2 cursor-default text-sm font-semibold shadow-md'>
+                  {skill}
+                </div>
+                <div className='absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max max-w-xs p-2 bg-black text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none'>
+                  {skillDescriptions[skill]}
+                </div>
+              </div>
             ))}
           </div>
         </CardContent>
       </Card>
     </section>
-  )
-}
+  );
+};
 
-export default Skills
-
+export default Skills;

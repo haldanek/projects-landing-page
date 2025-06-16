@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
@@ -23,43 +24,30 @@ const Header = () => {
   return (
     <header className='sticky top-0 z-50 bg-comic-yellow/80 backdrop-blur-md supports-[backdrop-filter]:bg-comic-yellow/60 comic-border mb-8'>
       <nav className='container mx-auto px-4 py-4 flex justify-between items-center'>
-        {/* Left side container with image + title */}
+        {/* Left side: image + title */}
         <div className='flex items-center space-x-4'>
-          {/* Image container */}
-          <div className='w-16 h-16 rounded-full border-4 border-yellow-400 overflow-hidden'>
-            <img
+          <div className='relative w-12 h-12 rounded-full border-4 border-red-500 overflow-hidden shadow-md'>
+            <Image
               src='/images/headshot.png'
               alt='Headshot'
-              className='w-full h-full object-cover'
+              fill
+              className='object-cover'
             />
           </div>
-
-          {/* Page title (not a link anymore) */}
-          <h1 className='text-5xl font-extrabold text-comic-red'>
+          <h1 className='text-4xl font-extrabold text-comic-red'>
             Kimberlee Haldane
           </h1>
         </div>
 
         {/* Desktop Menu */}
-        <div className='hidden md:flex space-x-4 text-xl'>
+        <div className='hidden md:flex gap-2'>
           {menuItems.map((item) => (
-            <Link key={item.name} href={item.href}>
-              <Button
-                variant='ghost'
-                className='
-                  bg-comic-red
-                  text-white
-                  font-bold
-                  border border-black
-                  hover:bg-red-700
-                  transition-colors
-                  rounded-full
-                  px-4 py-2
-                  text-xl
-                '
-              >
-                {item.name}
-              </Button>
+            <Link
+              key={item.name}
+              href={item.href}
+              className='bg-red-600 text-white font-semibold text-sm px-4 py-2 rounded-full hover:bg-yellow-400 hover:text-black border border-black transition-colors duration-200 shadow-md'
+            >
+              {item.name}
             </Link>
           ))}
         </div>
@@ -74,29 +62,17 @@ const Header = () => {
         </Button>
       </nav>
 
-      {/* Mobile Dropdown Menu */}
+      {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className='md:hidden px-4 pb-4 space-y-2'>
+        <div className='md:hidden px-4 pb-4 flex flex-col gap-2'>
           {menuItems.map((item) => (
-            <Link key={item.name} href={item.href} onClick={toggleMenu}>
-              <Button
-                variant='ghost'
-                className='
-                  w-full
-                  text-left
-                  bg-comic-red
-                  text-white
-                  font-bold
-                  border border-black
-                  hover:bg-red-700
-                  transition-colors
-                  rounded-full
-                  px-4 py-2
-                  text-xl
-                '
-              >
-                {item.name}
-              </Button>
+            <Link
+              key={item.name}
+              href={item.href}
+              onClick={toggleMenu}
+              className='bg-red-600 text-white font-semibold text-sm px-4 py-2 rounded-full hover:bg-yellow-400 hover:text-black border border-black transition-colors duration-200 shadow-md'
+            >
+              {item.name}
             </Link>
           ))}
         </div>
