@@ -16,13 +16,14 @@ const CareerSummary = () => {
             I aim to leverage my design skills in developing solutions that are both functional and intuitive,
             enhancing user experience through thoughtful, well-designed software.
           </p>
+          <br/>
           <ul className="list-disc pl-6 space-y-2">
-            <li>8 week internship as a Technical Writer: revamped onboarding documentation, created a template to document database components, was also able to work on technical tickets </li>
+            <li>8 week internship as a Technical Writer: revamped onboarding documentation and created a template to document database components</li>
             <li>Completed over 800 hours of education and application in a Java Full-stack bootcamp</li>
-            <li>Proven track record of improving student engagement and expanding support through differentiation</li>
             <li>Experienced in working with cross-functional and cross-curricula teams in diverse environments</li>
             <li>Over 12 years of experience in instructional leadership, exceeding grade-level
               expectations, increasing standardized assessment scores and improving literacy skills</li>
+            <li>Proven track record of improving student engagement and expanding support through differentiation</li>
           </ul>
         </CardContent>
       </Card>
