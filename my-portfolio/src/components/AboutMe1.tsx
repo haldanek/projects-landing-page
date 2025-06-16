@@ -7,7 +7,7 @@ const AboutMe = () => {
       <Card className='comic-card'>
         <CardHeader></CardHeader>
 
-        <div className='w-full h-full'>
+        <div className='w-full h-[300px]'>
           <img
             src='/images/kplogo.png'
             alt='Logo'
