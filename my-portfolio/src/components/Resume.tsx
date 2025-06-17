@@ -1,5 +1,5 @@
-//import Link from 'next/link';
-//import { Button } from '@/components/ui/button';
+// Updated Resume Component with Certificates Button
+import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Resume = () => {
@@ -33,6 +33,14 @@ const Resume = () => {
             >
               View Resume
             </a>
+
+            {/* Certificates Button */}
+            <Link
+              href='/certificates'
+              className='comic-button bg-yellow-500 text-white text-center rounded px-4 py-2'
+            >
+              View Certificates
+            </Link>
           </div>
         </CardContent>
       </Card>
