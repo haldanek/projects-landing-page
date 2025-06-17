@@ -4,24 +4,42 @@ import { Button } from '@/components/ui/button'
 
 const projects = [
   {
-    slug: 'api-documentation-overhaul',
-    title: 'API Documentation Overhaul',
-    description: 'Completely revamped the API documentation for a major SaaS platform, improving developer onboarding time by 40%.',
-    content: 'This project involved a complete overhaul of the existing API documentation...',
+    slug: 'technical-writing',
+    title: 'Technical Writing',
+    description: 'TBA',
+    content: 'TBA',
   },
   {
-    slug: 'iot-device-user-guide',
-    title: 'User Guide for IoT Device',
-    description: 'Created a comprehensive user guide for a new IoT device, reducing support tickets by 30%.',
-    content: 'The IoT device user guide was created to help users easily set up and use their new smart home device...',
+    slug: 'ux-ui-design',
+    title: 'UX/UI Design',
+    description: 'TBA',
+    content: 'TBA',
   },
   {
-    slug: 'technical-blog-series',
-    title: 'Technical Blog Series',
-    description: 'Authored a series of technical blog posts explaining complex machine learning concepts to a non-technical audience.',
-    content: 'This blog series aimed to demystify machine learning concepts for a general audience...',
+    slug: 'web-dev',
+    title: 'Full-Stack Web Development',
+    description: 'TBA',
+    content: 'TBA',
   },
-]
+  {
+    slug: 'tba',
+    title: 'TBA',
+    description: 'TBA',
+    content: 'TBA',
+  },
+  {
+    slug: 'tba',
+    title: 'TBA',
+    description: 'TBA',
+    content: 'TBA',
+  },
+  {
+    slug: 'tba',
+    title: 'TBA',
+    description: 'TBA',
+    content: 'TBA',
+  },
+];
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
   const project = projects.find((p) => p.slug === params.slug)
