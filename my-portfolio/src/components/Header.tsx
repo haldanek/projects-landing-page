@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -8,6 +8,7 @@ import { Menu } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -20,6 +21,14 @@ const Header = () => {
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <header className='sticky top-0 z-50 bg-comic-yellow/80 backdrop-blur-md supports-[backdrop-filter]:bg-comic-yellow/60 comic-border mb-8'>
@@ -34,7 +43,11 @@ const Header = () => {
               className='object-cover'
             />
           </div>
-          <h1 className='text-4xl font-extrabold text-comic-red'>
+          <h1
+            className={`text-4xl font-extrabold transition-colors duration-500 ${
+              scrolled ? 'text-white' : 'text-black'
+            }`}
+          >
             Kimberlee Haldane
           </h1>
         </div>
