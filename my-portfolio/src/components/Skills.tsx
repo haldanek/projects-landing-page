@@ -38,28 +38,37 @@ const Skills = () => {
   const skills = Object.keys(skillDescriptions);
 
   return (
-    <section id='skills' className='scroll-mt-16'>
-      <Card className='comic-card'>
-        <CardHeader>
-          <CardTitle className='text-3xl text-comic-purple'>
-            Skills & Abilities
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className='flex flex-wrap gap-4'>
-            {skills.map((skill, index) => (
-              <div key={index} className='relative group'>
-                <div className='comic-button bg-red-600 text-white hover:bg-yellow-400 hover:text-black transition-colors duration-200 rounded px-4 py-2 cursor-default text-sm font-semibold shadow-md'>
-                  {skill}
+    <section
+      id='skills'
+      className='relative bg-cover bg-center bg-no-repeat py-16 px-6 scroll-mt-16'
+      style={{ backgroundImage: "url('/images/sh-11.png')" }}
+    >
+      {/* Optional dark overlay for contrast */}
+      <div className='absolute inset-0 bg-black/50 z-0' />
+
+      <div className='relative z-10 max-w-6xl mx-auto'>
+        <Card className='bg-transparent backdrop-blur-sm border-white text-white shadow-lg'>
+          <CardHeader>
+            <CardTitle className='text-3xl text-comic-purple'>
+              Skills (Super Powers)
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className='flex flex-wrap gap-4'>
+              {skills.map((skill, index) => (
+                <div key={index} className='relative group'>
+                  <div className='comic-button bg-red-600 text-white hover:bg-yellow-400 hover:text-black transition-colors duration-200 rounded px-4 py-2 cursor-default text-sm font-semibold shadow-md'>
+                    {skill}
+                  </div>
+                  <div className='absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max max-w-xs p-2 bg-black text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none'>
+                    {skillDescriptions[skill]}
+                  </div>
                 </div>
-                <div className='absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max max-w-xs p-2 bg-black text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none'>
-                  {skillDescriptions[skill]}
-                </div>
-              </div>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      </div>
     </section>
   );
 };

@@ -47,56 +47,65 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className='scroll-mt-16'>
-      <Card className='comic-card'>
-        <CardHeader>
-          <CardTitle className='text-3xl text-comic-blue'>
-            Let&apos;s Connect!
-          </CardTitle>
+    <section
+      id='contact'
+      className='relative bg-cover bg-center bg-no-repeat py-16 px-6 scroll-mt-16'
+      style={{ backgroundImage: "url('/images/sh-12.png')" }}
+    >
+      {/* Optional dark overlay for contrast */}
+      <div className='absolute inset-0 bg-black/40 z-0' />
 
-          <CardDescription className='text-comic-black'>
-            Send me an email or connect on LinkedIn
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <form className='space-y-4' onSubmit={handleSubmit}>
-            <Input
-              className='comic-input'
-              placeholder='Your Name'
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <Input
-              className='comic-input'
-              type='email'
-              placeholder='Your Email'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-            <Textarea
-              className='comic-input'
-              placeholder='Your Message'
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            />
-            <Button type='submit' className='comic-button'>
-              Send Message
-            </Button>
-          </form>
-          <div className='mt-4'>
-            <Button
-              variant='outline'
-              className='comic-button flex items-center bg-comic-blue'
-              onClick={openLinkedIn}
-            >
-              <Linkedin className='mr-2 h-4 w-4' />
-              Connect on LinkedIn
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
+      {/* Main content */}
+      <div className='relative z-10 max-w-4xl mx-auto'>
+        <Card className='bg-white/80 backdrop-blur-md shadow-lg'>
+          <CardHeader>
+            <CardTitle className='text-3xl text-comic-blue'>
+              Let&apos;s Connect!
+            </CardTitle>
+            <CardDescription className='text-comic-black'>
+              Send me an email or connect on LinkedIn
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <form className='space-y-4' onSubmit={handleSubmit}>
+              <Input
+                className='comic-input'
+                placeholder='Your Name'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <Input
+                className='comic-input'
+                type='email'
+                placeholder='Your Email'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+              <Textarea
+                className='comic-input'
+                placeholder='Your Message'
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
+              />
+              <Button type='submit' className='comic-button'>
+                Send Message
+              </Button>
+            </form>
+            <div className='mt-4'>
+              <Button
+                variant='outline'
+                className='comic-button flex items-center bg-comic-blue'
+                onClick={openLinkedIn}
+              >
+                <Linkedin className='mr-2 h-4 w-4' />
+                Connect on LinkedIn
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
     </section>
   );
 };
