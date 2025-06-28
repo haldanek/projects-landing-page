@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.{js,ts,jsx,tsx}', // Adjust to match your file paths
+    './app/**/*.{js,ts,jsx,tsx}', // <-- Add this line
+    './components/**/*.{js,ts,jsx,tsx}', // Optional: include component folder
+    './pages/**/*.{js,ts,jsx,tsx}', // If you're mixing old pages too
     './public/index.html',
   ],
   theme: {
