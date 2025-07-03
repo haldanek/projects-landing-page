@@ -35,14 +35,14 @@ const Header = () => {
       <nav className='container mx-auto px-4 py-4 flex justify-between items-center'>
         {/* Left side: image + title */}
         <div className='flex items-center space-x-4'>
-          <div className='relative w-12 h-12 rounded-full border-4 border-red-500 overflow-hidden shadow-md'>
-            <Image
-              src='/images/headshot.png'
-              alt='Headshot'
-              fill
-              className='object-cover'
-            />
-          </div>
+          <Image
+            src='/images/headshot.png'
+            alt='Headshot'
+            width={48}
+            height={48}
+            className='rounded-full object-cover border-4 border-red-500 shadow-md'
+          />
+
           <h1
             className={`text-4xl font-extrabold transition-colors duration-500 ${
               scrolled ? 'text-white' : 'text-black'
